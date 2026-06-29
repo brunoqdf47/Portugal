@@ -150,7 +150,33 @@
   footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   footer b{color:#E9F0F8;font-family:"Space Grotesk",monospace;font-weight:600}
 
+  .reflection{background:linear-gradient(180deg,#fff,#FBFAF4);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:14px;padding:22px 24px;margin-top:22px;box-shadow:var(--shadow)}
+  .reflection .eyebrow{color:#A87F2E}
+  .reflection p{color:var(--ink-soft);margin:.55rem 0 .6rem}
+  .reflection p:last-child{margin-bottom:0}
+  .reflection .em{font-family:"Fraunces",serif;font-style:italic;color:var(--ink)}
+
+  .shorts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:760px;margin:0 auto}
+  .short{aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:#000;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.06)}
+  .short iframe{width:100%;height:100%;border:0;display:block}
+
+  .proc{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+  .pcard .pn{font-family:"Space Grotesk",monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cobalt);font-weight:600}
+  .pcard h3{font-size:1.15rem;margin:.3rem 0 .4rem;font-family:Fraunces;font-weight:600}
+  .pcard p{margin:0;color:var(--ink-soft);font-size:.93rem}.pcard b{color:var(--ink)}
+  .liquid{background:#EAF1F9;border:1px solid #CADDEF;border-radius:10px;padding:10px 12px;margin-top:10px;font-size:.85rem;color:var(--ink-soft)}
+
+  .risk{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .rk{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+  .rk .q{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:var(--ink)}
+  .rk .q .qi{color:var(--port);font-family:Fraunces;font-weight:700;font-size:1.05rem;line-height:1.2}
+  .rk .a{display:flex;gap:10px;align-items:flex-start;margin-top:8px;color:var(--ink-soft);font-size:.93rem}
+  .rk .a .ai{color:var(--good);font-weight:700;line-height:1.5}
+
   @media (max-width:760px){
+    .shorts{grid-template-columns:1fr;max-width:300px}
+    .proc,.risk{grid-template-columns:1fr}
     .g4,.g3{grid-template-columns:repeat(2,1fr)}
     .g2,.quotes,.travel,.reality{grid-template-columns:1fr}
     .two{grid-template-columns:1fr}
@@ -185,6 +211,12 @@
       <div class="eyebrow">Onde a conta chegou</div>
       <h2>Uma decisão tomada com cuidado</h2>
       <p>Não é impulso e não é fuga. É o resultado de olhar a vida como ela está hoje, somar as contas, pesar os riscos e enxergar onde o futuro fica mais seguro. A conclusão foi clara: o melhor caminho para a família agora é seguir para o Porto — com mais estabilidade, mais segurança e melhores condições para a chegada do bebê.</p>
+    </div>
+    <div class="reflection">
+      <div class="eyebrow">Uma palavra pessoal</div>
+      <p>Antes de tudo, eu encaro isto como uma <span class="em">conquista</span> — e, em primeiro lugar, como uma porta aberta por Deus, fruto de sementes que venho plantando há anos. Nos altos e baixos da vida, o estudo e o aprimoramento foram as poucas coisas que se mantiveram constantes.</p>
+      <p>Desde que comecei a trabalhar, o sonho era morar fora com direitos de cidadão e visto de trabalho — diferente da época da Austrália, quando fui como estudante. Curiosamente, hoje, quando eu já nem buscava mais isso (passei a valorizar a proximidade da família acima de ego, status ou carreira), a oportunidade veio me encontrar.</p>
+      <p>Se fosse um momento mais estável, talvez eu abrisse mão para não ficar longe. Mas não posso diminuir o que isto realmente é: algo que quase todo mundo sonha e que poucos têm a chance de viver — e não por sorte. É porque eu construí, criando valor no meu perfil pelo aprimoramento. É a oportunidade de organizar a nossa vida em pouco tempo, porque ela muda tudo.</p>
     </div>
     <div class="grid g4">
       <div class="card stat"><div class="n trend-dn">≈1,8%</div><div class="k">PIB Brasil 2026</div><div class="d">Crescimento fraco — depois de 2,4% em 2025 e 3,4% em 2024.</div></div>
@@ -288,9 +320,9 @@
         <div>
           <p style="color:var(--ink-soft)">Numa hipótese <b>maravilhosa e pouco provável</b> — eu encontrar, primeiro, um emprego novo que pagasse <b>R$18.000 a R$20.000</b> — aí sim acenderia uma luz. Só que, para isso, eu teria que <b>conseguir essa vaga antes</b>. E mesmo nesse cenário de sonho, eu <b>ainda ficaria abaixo do Porto</b>.</p>
           <div class="vs">
-            <div class="vside br"><div class="big">R$20K </div><small>no Brasil / mês (hipótese)</small></div>
+            <div class="vside br"><div class="big">R$20.000</div><small>no Brasil / mês (hipótese)</small></div>
             <div class="lt">&lt;</div>
-            <div class="vside pt"><div class="big">€2.5K </div><small>no Porto (~R$16.000)</small></div>
+            <div class="vside pt"><div class="big">€2.500</div><small>no Porto (~R$16.000)</small></div>
           </div>
           <p style="color:var(--ink-soft);font-size:.93rem;margin-top:14px">Parece contraintuitivo, mas é real: os descontos consomem o dinheiro <b>antes de cair na conta</b> — não dá nem para manobrar — e o custo daqui é imprevisível. Lá, com €2.500, sobra todo mês e a poupança é em euro. O número maior aqui entrega menos para a família.</p>
         </div>
@@ -392,8 +424,24 @@
     <div class="grid g4" style="margin-top:22px">
       <div class="card stat"><div class="n good">Top 10</div><div class="k">Segurança · mundo</div><div class="d">Portugal entre os países mais seguros — paz para o bebê crescer.</div></div>
       <div class="card stat"><div class="n">311 mil</div><div class="k">Estrangeiros · Norte</div><div class="d">Comunidade brasileira já estabelecida na região do Porto.</div></div>
-      <div class="card stat"><div class="n">Saúde</div><div class="k">Saúde particular + ensino</div><div class="d">Plano privado para o bebê; ensino público gratuito de qualidade.</div></div>
+      <div class="card stat"><div class="n">Convênio</div><div class="k">Saúde particular + ensino</div><div class="d">Plano privado para o bebê; ensino público gratuito de qualidade.</div></div>
       <div class="card stat"><div class="n gold">~8,5%</div><div class="k">mais barato que Lisboa</div><div class="d">Mesma qualidade, conta mensal mais leve (fora aluguel).</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O PORTO EM VÍDEO ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">O Porto em vídeo</div>
+      <h2>Um pouco de como é por lá</h2>
+      <p>Alguns vídeos curtos para sentir a cidade — ruas, rio e o dia a dia. (Precisa de internet para reproduzir.)</p>
+    </div>
+    <div class="shorts">
+      <div class="short"><iframe src="https://www.youtube.com/embed/0JYVqKvGBB8" title="Porto em vídeo 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="short"><iframe src="https://www.youtube.com/embed/3HekyTbRc30" title="Porto em vídeo 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="short"><iframe src="https://www.youtube.com/embed/twYfwvF6fcU" title="Porto em vídeo 3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </div>
   </div>
 </section>
@@ -404,7 +452,7 @@
     <div class="sec-head">
       <div class="eyebrow">Custo de vida · família (casal + bebê)</div>
       <h2>Quanto custa viver bem no Porto</h2>
-      <p>Estimativa realista para uma estadia excelente e a preço justo nos arredores — <b>Vila Nova de Gaia, Matosinhos ou Gondomar</b>: boa infraestrutura, transporte e o centro a poucos minutos.</p>
+      <p>Estimativa realista para uma estadia boa e a preço justo nos arredores — <b>Vila Nova de Gaia, Matosinhos ou Gondomar</b>: boa infraestrutura, transporte e o centro a poucos minutos.</p>
     </div>
     <div class="two">
       <div class="card">
@@ -451,8 +499,8 @@
       <div class="card">
         <div class="scorebar"><div class="num">4,0</div><div><div class="stars">★★★★☆</div><div style="font-size:.82rem;color:var(--mute);font-family:'Space Grotesk'">de 5,0 · 40 avaliações no Glassdoor</div></div></div>
         <div class="highlight">
-          <div class="hn">Centenas</div>
-          <div class="ht">de processos de imigração conduzidos — <b>sem histórico de recusa</b>. A parte burocrática é caminho conhecido para eles.</div>
+          <div class="hn">Desde 2007</div>
+          <div class="ht">conduzindo relocações de profissionais — <b>sem histórico de insucesso</b> em obter o visto de trabalho. A burocracia é um caminho que eles já percorreram muitas vezes.</div>
         </div>
         <div class="feat">
           <div class="row"><div class="ic">🏛️</div><div><b>Desde 2007 no mercado</b><small>Fundada pelo CEO Luís Setúbal; escritórios em Lisboa, Porto e São Paulo.</small></div></div>
@@ -474,18 +522,73 @@
   </div>
 </section>
 
-<!-- ============ DEPOIMENTOS ============ -->
+<!-- ============ SEGURANÇA DO PROCESSO ============ -->
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Quem já vive isso</div>
-      <h2>O que dizem brasileiros lá</h2>
-      <p>Sentimentos reais, resumidos a partir de avaliações públicas (site da Integer, Glassdoor e relatos de brasileiros no Porto).</p>
+      <div class="eyebrow">Como funciona · estabilidade desde já</div>
+      <h2>O que dá segurança ao processo</h2>
+      <p>Pontos concretos do contrato e do trâmite — para deixar claro que é um caminho firme, e não uma aposta no escuro.</p>
     </div>
-    <div class="quotes">
-      <div class="quote"><div class="mark">”</div><p>Sou brasileiro vivendo em Portugal e adoro a diversidade do dia a dia no trabalho. Aprendizado novo o tempo todo.</p><div class="who">Colaborador brasileiro · Integer</div><div class="src">Resumo de depoimento público</div></div>
-      <div class="quote"><div class="mark">”</div><p>Desde o primeiro dia, a sensação é de cuidado — com a vida pessoal e profissional. Há apoio real para quem vem para Portugal.</p><div class="who">Colaboradora · desde 2018</div><div class="src">Resumo de depoimento público</div></div>
-      <div class="quote"><div class="mark">”</div><p>A entrevista foi por vídeo, com pessoas atenciosas e transparentes; explicaram bem a empresa e o que esperar.</p><div class="who">Candidato · processo Integer</div><div class="src">Resumo de avaliação no Glassdoor</div></div>
+    <div class="proc">
+      <div class="pcard">
+        <div class="pn">Contrato</div>
+        <h3>Por tempo indeterminado</h3>
+        <p>Com garantia de <b>no mínimo 1 ano</b> para os dois lados — empresa e profissional. Estabilidade desde o primeiro dia, sem prazo de validade para acabar.</p>
+      </div>
+      <div class="pcard">
+        <div class="pn">Trâmite do visto</div>
+        <h3>De 2 a 4 meses</h3>
+        <p>Um caminho conhecido, conduzido pela consultoria. E o ponto importante: <b>já com salário durante toda a espera</b>.</p>
+      </div>
+      <div class="pcard">
+        <div class="pn">Durante a espera (ainda no Brasil)</div>
+        <h3>R$16.000 líquidos por mês</h3>
+        <p>Mesmo antes de viajar, já entrando esse valor todo mês.</p>
+        <div class="liquid">💡 <b>Líquido</b> quer dizer <b>sem descontos</b>: é o valor que cai limpo na conta, já livre de impostos e taxas. Não é o "bruto", de onde ainda se tira um pedaço — é o que sobra de verdade no fim.</div>
+      </div>
+      <div class="pcard">
+        <div class="pn">Ao chegar a Portugal</div>
+        <h3>Salário em euro</h3>
+        <p>A remuneração passa a ser em <b>euro</b> — confortável para sustentar uma vida de <b>padrão médio-alto</b> para as três pessoas da família.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANÁLISE DE RISCO ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Análise de risco · sem maquiar</div>
+      <h2>E se algo não sair como o planejado?</h2>
+      <p>Avaliar direito é também olhar para o que pode dar errado — e ter uma resposta para cada ponto. Aqui estão os principais, com franqueza.</p>
+    </div>
+    <div class="risk">
+      <div class="rk">
+        <div class="q"><span class="qi">?</span><span>E se a gente não se adaptar?</span></div>
+        <div class="a"><span class="ai">→</span><span>O contrato é por tempo indeterminado e nada prende ninguém ao país. Se não der certo, voltar é uma opção — só que voltando com experiência internacional, euro poupado e um currículo mais forte.</span></div>
+      </div>
+      <div class="rk">
+        <div class="q"><span class="qi">?</span><span>O clima não é mais difícil?</span></div>
+        <div class="a"><span class="ai">→</span><span>O inverno é mais frio e úmido que o de São Paulo, e as casas pedem aquecimento (já previsto no orçamento). Em compensação, o verão é ameno e agradável.</span></div>
+      </div>
+      <div class="rk">
+        <div class="q"><span class="qi">?</span><span>E se eu ficar sem o emprego lá?</span></div>
+        <div class="a"><span class="ai">→</span><span>A garantia mínima de um ano dá fôlego, e o mercado europeu de TI tem demanda real. A própria consultoria recoloca o profissional em novos projetos.</span></div>
+      </div>
+      <div class="rk">
+        <div class="q"><span class="qi">?</span><span>A burocracia do visto não trava tudo?</span></div>
+        <div class="a"><span class="ai">→</span><span>É um caminho que a consultoria já percorreu muitas vezes. Leva de 2 a 4 meses — e, durante esse tempo, já há salário entrando.</span></div>
+      </div>
+      <div class="rk">
+        <div class="q"><span class="qi">?</span><span>O custo de vida não é alto?</span></div>
+        <div class="a"><span class="ai">→</span><span>O aluguel subiu nas grandes cidades — por isso a escolha dos arredores do Porto, com preço justo. E o salário cobre o custo desde o primeiro mês.</span></div>
+      </div>
+      <div class="rk">
+        <div class="q"><span class="qi">?</span><span>E a distância da família?</span></div>
+        <div class="a"><span class="ai">→</span><span>É o ponto que mais pesa, e não dá para fingir o contrário. Por isso o plano é construir base e aproximar a família o quanto antes — com voos acessíveis e chamada de vídeo encurtando o caminho enquanto isso.</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -519,7 +622,7 @@
     <div class="flagbar" style="width:72px;margin:12px 0 4px"></div>
     <h2>É pela família.</h2>
     <p>Toda essa análise tem um objetivo só: dar à família a vida estável e digna que merece. A decisão não nasceu de emoção nem de pressa — nasceu de somar os números, pesar os riscos e enxergar, com calma, onde o futuro fica mais seguro.</p>
-    <p>Cada passo é para construir uma base sólida: Desenvolvimento, estabilidade, segurança e conforto para o bebê crescer. Não é deixar nada para trás; é proteger e fazer crescer o que estamos começando.</p>
+    <p>Se for preciso ir na frente para preparar o caminho, vale a pena — porque cada passo é para construir uma base sólida: nome, crédito, segurança e conforto para o bebê crescer. Não é deixar nada para trás; é proteger e fazer crescer o que estamos começando.</p>
     <div class="sign">— Bruno</div>
   </div>
 </section>
